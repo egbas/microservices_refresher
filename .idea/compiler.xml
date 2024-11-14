@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,10 +11,13 @@
         <module name="OrderService" />
         <module name="PaymentService" />
         <module name="service-registry" />
+        <module name="ProductService" />
         <module name="CloudGateway" />
-        <module name="productService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="productService" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,6 +25,7 @@
       <module name="ConfigServer" options="-parameters" />
       <module name="OrderService" options="-parameters" />
       <module name="PaymentService" options="-parameters" />
+      <module name="ProductService" options="-parameters" />
       <module name="productService" options="-parameters" />
       <module name="service-registry" options="-parameters" />
     </option>
